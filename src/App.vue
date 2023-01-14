@@ -1,23 +1,16 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <a href="/home">Home</a> |
-  <a href="/about">About</a> |
-  <a href="/non-existent-path">Broken Link</a>
+  <v-app>
+    <v-main>
+      <v-img contain alt="Vue logo" src="./assets/logo.png" max-height="150" max-width="250"/>
+      <a href="/home">Home</a> |
+      <a href="/about">About</a> |
+      <a href="/non-existent-path">Broken Link</a>
+    </v-main>
+  </v-app>
 </template>
 
 <script>
-  export default {
-    name: 'App',
-  }
-</script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+export default {
+  name: 'App',
 }
-</style>
+</script>
